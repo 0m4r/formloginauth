@@ -13,15 +13,13 @@
 <title>TamTamy2Reader</title>
 <script type="text/javascript" src="js/prototype.js"></script>
 <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAAuUAboMvbl-lAwwgzcnSmxSBVm6dSI_DqfaWu_KqoK73iyRwExSrrIkemSfQCesof1E7tbp5jKLx6g"></script>
-<!-- ABQIAAAAAuUAboMvbl-lAwwgzcnSmxTpZLcSjPp-g3vPS5u5C4nOId2tAxRO1iNNuhbtgWnvOF1zDyh0n2TGaw-->
 <script type="text/javascript">
  
     google.load("feeds", "1");
  	
  	
     function grab() {
-      //var feed = new google.feeds.Feed("http://jlabs.adobati.it/TamTamyHack/TamTamyRSS?https=true&usr="+$('usr').value+"&pwd="+$('pwd').value+"&feedurl="+$('rss').value+"&op=");                       
-      var feed = new google.feeds.Feed("TamTamyRSS?https=true&usr="+$('usr').value+"&pwd="+$('pwd').value+"&feedurl="+$('rss').value+"&op=");                       
+      var feed = new google.feeds.Feed("http://jlabs.adobati.it/FormLoginAuthentication/FormAuthLogin?https=true&usr="+$('usr').value+"&pwd="+$('pwd').value+"&feedurl="+$('rss').value+"&op=");                             
       feed.setResultFormat(google.feeds.Feed.XML_FORMAT);      
       feed.setNumEntries($('results').value);
       

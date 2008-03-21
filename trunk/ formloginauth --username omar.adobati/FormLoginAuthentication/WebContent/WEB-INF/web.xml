@@ -4,7 +4,7 @@
 
   <servlet>	
     <servlet-name>TamTamyRSS</servlet-name>
-    <servlet-class>com.omar.tamtamy.FormAuthLogin</servlet-class>
+    <servlet-class>com.omar.lab.FormLoginAuthentication.FormLoginAuthentication</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>TamTamyRSS</servlet-name>
@@ -13,21 +13,12 @@
   
   <servlet>	
     <servlet-name>FormAuthLogin</servlet-name>
-    <servlet-class>com.omar.tamtamy.FormAuthLogin</servlet-class>
+    <servlet-class>com.omar.lab.FormLoginAuthentication.FormLoginAuthentication</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>FormAuthLogin</servlet-name>
-    <url-pattern>/FormAuthLogin</url-pattern>
-  </servlet-mapping>  
-  
-  <servlet>
-    <servlet-name>AjaxGateway</servlet-name>
-    <servlet-class>com.omar.ajax.gw.AjaxGateway</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AjaxGateway</servlet-name>
-    <url-pattern>/AjaxGateway</url-pattern>
-  </servlet-mapping> 
+    <servlet-name>FormLoginAuthentication</servlet-name>
+    <url-pattern>/FormLoginAuthentication</url-pattern>
+  </servlet-mapping>   
   
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

@@ -31,46 +31,46 @@ public class Props extends Properties {
 	}	
 
 	public String getContentPage() {
-		return this.getProperty("contentPage").trim();
+		return this.getProperty("contentPage");
 	}	
 
 	public String getLoginPage() {
-		return this.getProperty("loginPage").trim();
+		return this.getProperty("loginPage");
 	}
 
 	public String getLogonSite() {
-		return this.getProperty("logonSite").trim();
+		return this.getProperty("logonSite");
 	}
 
 	public String getPassword() {
-		return this.getProperty("password").trim();
+		return this.getProperty("password");
 	}
 
 	public String getPassword_form_field() {
-		return this.getProperty("password_form_field").trim();
+		return this.getProperty("password_form_field");
 	}
 
 	public String getUsername() {
-		return this.getProperty("username").trim();
+		return this.getProperty("username");
 	}
 
 	public String getUsername_form_field() {
-		return this.getProperty("username_form_field").trim();
+		return this.getProperty("username_form_field");
 	}
 
 	public int getPort() {
 		int port = 0;
-		String portS = this.getProperty("port").trim();
+		String portS = this.getProperty("port");
 		if(portS!=null && !portS.equals(""))
 			port = Integer.parseInt(portS);
 		return port;
 	}
 
 	public String getProtocol() {
-		return this.getProperty("protocol").trim();
+		return this.getProperty("protocol");
 	}
 	
 	public String getCustomProperty(String propName){
-		return this.getProperty(propName).trim();
+		return this.getProperty(propName);
 	}		
 }

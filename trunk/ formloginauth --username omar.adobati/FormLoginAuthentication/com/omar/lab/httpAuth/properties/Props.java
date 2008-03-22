@@ -6,10 +6,12 @@ import java.util.Properties;
 public class Props extends Properties {
   
   private static final long serialVersionUID = 1L;
-
+  private final String propertiesFileName = "auth.properties";
+  
+  
   public Props(){
 	super();			
-	loadPropertiesFile("auth,properties");	
+	loadPropertiesFile(propertiesFileName);	
   }
 
   public Props(String fileName){
@@ -22,7 +24,7 @@ public class Props extends Properties {
 	  InputStream resourceAsStream = this.getClass().getResourceAsStream (fileName);	
 	  load(resourceAsStream);
 	} catch (Exception e) {
-	  System.err.println("Cannot find properties file");
+	  System.err.println("Cannot find properties file: " + propertiesFileName);
 	  e.printStackTrace();
 	}	
   }	
